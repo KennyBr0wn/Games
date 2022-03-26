@@ -48,6 +48,8 @@ namespace TestGame
                               "\n(1) Get ready silently      (2) \"Who are you?\"      (3) \"Okay\"");
 
             //NumberCheck(3, numberFromUser);
+
+            //It's a test to see if the method works in the actual game without calling it, just the plain code, and it does
             int numberOfOptions = 3;
 
             switch (numberOfOptions)
@@ -124,7 +126,7 @@ namespace TestGame
                     Statistics(charLevel, charEXP, money);
                     strangerWife = "Wife";
                     Console.WriteLine($"{strangerWife}: \"Funny... What do you mean who I am, the only idiot who'd marry you...\n" +
-                        " now seriously, get ready or you'll be late.\"");
+                        "now seriously, get ready or you'll be late.\"");
                     Console.WriteLine("\nYou get ready for work, take a warm shower, brush your teeth, get dressed" +
                         " and get ready to head down for breakfast.");
                     break;
@@ -175,6 +177,9 @@ namespace TestGame
                               $"Money - {money}" +
                                "\n\n\n\n\n\n\n\n\n\n");
         }
+
+        //Although, this one doesn't work, I tried to use void, so it'll just have a number or int to return the selected number by the user
+        
         public static int NumberCheck(int numberOfOptions, int numberFromUser)
         {
             switch (numberOfOptions)
